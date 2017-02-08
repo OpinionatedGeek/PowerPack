@@ -1,0 +1,16 @@
+<%@ Master Language="C#" AutoEventWireup="false" %>
+<HTML>
+	<HEAD>
+		<title>
+			<asp:contentplaceholder id="HeaderTitle" runat="server"></asp:contentplaceholder>
+		</title>
+	</HEAD>
+	<body>
+		<h2>
+			<asp:contentplaceholder id="PageTitle" runat="server"></asp:contentplaceholder>
+		</h2>
+		<form name="myForm" runat="server">
+			<asp:contentplaceholder id="Body" runat="server"></asp:contentplaceholder>
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,581 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{359C457A-B1DE-42A3-B0F4-FFF86A506708}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>OpinionatedGeek.Web.PowerPack</AssemblyName>
+    <AssemblyOriginatorKeyFile>OpGeekAssemblyKeys.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpinionatedGeek.Web.PowerPack</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\ReleaseMechanism\Comments.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Package For Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>..\ReleaseMechanism\Comments.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Browser\BrowserType.cs" />
+    <Compile Include="Browser\UserAgentParser.cs" />
+    <Compile Include="CollapsiblePanel\CollapsiblePanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollapsiblePanel\CollapsiblePanelConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollapsiblePanel\CollapsiblePanelLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollapsiblePanel\EnhancedStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CollapsiblePanel\TextDecoration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\ComboBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\ComboBoxConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\ComboBoxLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\ComboBoxFieldFactory.cs" />
+    <Compile Include="ComboBox\Firefox2ComboBoxField.cs" />
+    <Compile Include="ComboBox\IE7ComboBoxField.cs" />
+    <Compile Include="ComboBox\DefaultComboBoxField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\IE5ComboBoxField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\IE6ComboBoxField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\MozComboBoxField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBox\WebKitComboBoxField.cs" />
+    <Compile Include="Configuration\PowerPackConfigurationSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationSectionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\WebKitDatePickerField.cs" />
+    <Compile Include="DatePicker\DatePicker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\DatePickerConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\DatePickerFieldFactory.cs" />
+    <Compile Include="DatePicker\DatePickerLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\DefaultDatePickerField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\IE5DatePickerField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\MozDatePickerField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatePicker\NSDatePickerField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designers\AutomaticDesigner.cs" />
+    <Compile Include="Diagnostics\Diag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\DnsQueryTypes.cs" />
+    <Compile Include="Dns\DnsLookup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\DnsRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\DnsRecord_A.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\DnsRecord_Mx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\DnsRecord_Null.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\DnsTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\ResponseDecoder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\ResponseStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globalisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HyperLink\HyperLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HyperLink\HyperLinkLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Licensing\License.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Licensing\LicenseCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Licensing\PowerPackLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Licensing\ValidLicense.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalisedText.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalisedText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageAutomatically.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageAutomaticallyLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageImageButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageImageButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageLinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MakeMeHomePage\MakeMeHomePageLinkButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Note\Note.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Note\NoteLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\ClientPopupManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupAutomatically.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupAutomaticallyLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupImageButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupImageButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupLinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupLinkButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerPack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintAutomatically.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintAutomaticallyLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintImageButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintImageButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintLinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Print\PrintLinkButtonLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\Firefox2RTField.cs" />
+    <Compile Include="RichTextBox\IE7RTField.cs" />
+    <Compile Include="RichTextBox\DesignerRTField.cs" />
+    <Compile Include="RichTextBox\DefaultRTField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\IE5RTField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\MozRTField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextBoxLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextFieldFactory.cs" />
+    <Compile Include="RichTextBox\RTConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\WebKitRTField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\WysiwygRTField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScrollablePanel\ScrollablePanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScrollablePanel\ScrollablePanelLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowAtTime\ShowAtTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowAtTime\ShowAtTimeLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowIf\ShowIfInRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowIf\ShowIfInRoleLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowIf\ShowIfLoggedIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowIf\ShowIfLoggedInLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowIf\ShowIfNotLoggedIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowIf\ShowIfNotLoggedInLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowOnCondition\ShowOnCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowOnCondition\ShowOnConditionClientSide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowOnCondition\ShowOnConditionClientSideLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowOnCondition\ShowOnConditionConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowOnCondition\ShowOnConditionServerSide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowOnCondition\ShowOnConditionServerSideLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwearFilter\BlockedWord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwearFilter\SwearFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwearFilter\SwearFilterConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwearFilter\SwearFilterLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextBox\TextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextBox\TextBoxLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwinListBox\TwinListBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwinListBox\TwinListBoxButtonSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwinListBox\TwinListBoxLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwinListBox\TwinListBoxListBoxSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwinListBox\TwinnableListBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\ControlHelper.cs" />
+    <Compile Include="Util\NativeMethods.cs" />
+    <Compile Include="Util\CssHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\HtmlTextWriterFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Normaliser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\EmailAddressCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\EmailAddressValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\EmailAddressValidatorLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\NoRepostValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\NoRepostValidatorLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="ComboBox\CommonFiles\Ie5Dhtml.js" />
+    <EmbeddedResource Include="ComboBox\CommonFiles\Ie6Dhtml.js" />
+    <EmbeddedResource Include="ComboBox\CommonFiles\MozDhtml.js" />
+    <EmbeddedResource Include="ComboBox\CommonFiles\Ie7Dhtml.js" />
+    <EmbeddedResource Include="ComboBox\CommonFiles\Firefox2Dhtml.js" />
+    <EmbeddedResource Include="DatePicker\CommonFiles\DatePickerIcon.gif" />
+    <EmbeddedResource Include="DatePicker\CommonFiles\Ie5Dhtml.js" />
+    <EmbeddedResource Include="DatePicker\CommonFiles\MozDhtml.js" />
+    <EmbeddedResource Include="DatePicker\CommonFiles\NsDhtml.js" />
+    <EmbeddedResource Include="LocalisedText.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalisedText.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeMeHomePage\CommonFiles\homepage.gif" />
+    <EmbeddedResource Include="Popup\CommonFiles\popup.gif" />
+    <EmbeddedResource Include="Print\CommonFiles\print.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\button_down.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\button_normal.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\button_up.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\Ie5Dhtml.js" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\MozDhtml.js" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\toolbar1.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\toolbar1disabled.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\toolbar2.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\toolbar2disabled.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\Ie7Dhtml.js" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\Firefox2Dhtml.js" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\ToolbarBackground.gif" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\button_down_overlay.png" />
+    <EmbeddedResource Include="RichTextBox\CommonFiles\button_up_overlay.png" />
+    <EmbeddedResource Include="ShowOnCondition\CommonFiles\Ie5Dhtml.js" />
+    <EmbeddedResource Include="ShowOnCondition\CommonFiles\MozDhtml.js" />
+    <None Include="OpGeekAssemblyKeys.snk" />
+    <None Include="SwearFilter\SwearFilter.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RichTextBox\CommonFiles\WebKitDhtml.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComboBox\CommonFiles\WebKitDhtml.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DatePicker\CommonFiles\WebKitDhtml.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Package For Release|AnyCPU' ">
+    <CoreBuildDependsOn>
+      BuildOnlySettings;
+      PrepareForBuild;
+      PreBuildEvent;
+      UnmanagedUnregistration;
+      ResolveReferences;
+      PrepareResources;
+      ResolveKeySource;
+      Compile;
+      GenerateSerializationAssemblies;
+      CreateSatelliteAssemblies;
+      GenerateManifests;
+      GetTargetPath;
+      PrepareForRun;
+      UnmanagedRegistration;
+      IncrementalClean;
+      PackageForRelease;
+      PostBuildEvent
+    </CoreBuildDependsOn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <HelpFileBuilderCommand>"C:\Program Files (x86)\Sandcastle Help File Builder\SandcastleBuilderConsole.exe"</HelpFileBuilderCommand>
+    <ReleaseBuildFolder>$(SolutionDir)ReleaseMechanism\</ReleaseBuildFolder>
+    <PackageFolderName>Release\</PackageFolderName>
+    <PackageFolder>$(ReleaseBuildFolder)$(PackageFolderName)</PackageFolder>
+    <PackageFileName>PowerPack.zip</PackageFileName>
+    <PackageFile>$(ReleaseBuildFolder)$(PackageFileName)</PackageFile>
+    <CompiledHelpFileName>OpinionatedGeek ASP.NET PowerPack.chm</CompiledHelpFileName>
+    <CompiledHelpFile>$(ReleaseBuildFolder)$(CompiledHelpFileName)</CompiledHelpFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <DeployedFiles Include="$(ReleaseBuildFolder)Readme.html;$(ReleaseBuildFolder)License.txt;"/>
+    <SampleFiles Include="$(ReleaseBuildFolder)Samples\*.aspx;$(ReleaseBuildFolder)Samples\*.config;"/>
+  </ItemGroup>
+  <Target Name="PackageForRelease">
+    <RemoveDir Directories="$(PackageFolder)" />
+    <Delete Files="$(PackageFile)" />
+    <Exec Command="$(HelpFileBuilderCommand) /v &quot;$(ReleaseBuildFolder)PowerPack.shfb&quot;" />
+    <Copy SourceFiles="@(DeployedFiles)" DestinationFolder="$(PackageFolder)" />
+    <Copy SourceFiles="@(SampleFiles)" DestinationFolder="$(PackageFolder)Samples" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(PackageFolder)\bin" />
+    <Copy SourceFiles="$(CompiledHelpFile)" DestinationFolder="$(PackageFolder)" />
+    <Exec Command="cd $(PackageFolder) &amp; &quot;..\Zip.exe&quot; -r &quot;..\$(PackageFileName)&quot; &quot;.&quot;" />
+    <RemoveDir Directories="$(PackageFolder)" />
+    <Delete Files="$(CompiledHelpFile)" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

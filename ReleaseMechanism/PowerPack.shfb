@@ -1,0 +1,54 @@
+﻿<project schemaVersion="1.6.0.7">
+    <assemblies>
+        <assembly assemblyPath="..\Source\bin\OpinionatedGeek.Web.PowerPack.dll" xmlCommentsPath=".\Comments.xml" commentsOnly="False" />
+    </assemblies>
+    <namespaceSummaries>
+        <namespaceSummaryItem name="" isDocumented="False" />
+        <namespaceSummaryItem name="OpinionatedGeek.Web.PowerPack" isDocumented="True">The OpinionatedGeek.Web.PowerPack namespace contains all the web controls required for "PowerPack for ASP.NET" functionality.</namespaceSummaryItem>
+        <namespaceSummaryItem name="OpinionatedGeek.Web.PowerPack.Licensing" isDocumented="False" />
+    </namespaceSummaries>
+    <dependencies>
+        <dependencyItem depPath="GAC:System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </dependencies>
+    <ProjectSummary>&lt;br /&gt;A crafted collection of rich, useful web controls that take advantage of client-side facilities and DHTML where available but try to degrade gracefully in older browsers.</ProjectSummary>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
+    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, SealedProtected</VisibleItems>
+    <HtmlHelp1xCompilerPath path="" />
+    <HtmlHelp2xCompilerPath path="" />
+    <OutputPath>.\</OutputPath>
+    <SandcastlePath path="" />
+    <WorkingPath path="" />
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>False</KeepLogFile>
+    <BuildLogFile path="" />
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <FrameworkVersion>2.0.50727</FrameworkVersion>
+    <IndentHtml>False</IndentHtml>
+    <Preliminary>False</Preliminary>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <RootNamespaceTitle>PowerPack for ASP.NET</RootNamespaceTitle>
+    <HelpTitle>PowerPack for ASP.NET Class Library</HelpTitle>
+    <HtmlHelpName>OpinionatedGeek ASP.NET PowerPack</HtmlHelpName>
+    <Language>en-US</Language>
+    <CopyrightHref>http://www.opinionatedgeek.com</CopyrightHref>
+    <CopyrightText>© Copyright 2003-2007 OpinionatedGeek.</CopyrightText>
+    <FeedbackEMailAddress>support@opinionatedgeek.com</FeedbackEMailAddress>
+    <FeedbackEMailLinkText />
+    <HeaderText />
+    <FooterText />
+    <ProjectLinkType>Local</ProjectLinkType>
+    <SdkLinkType>Msdn</SdkLinkType>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <PresentationStyle>Prototype</PresentationStyle>
+    <NamingMethod>Guid</NamingMethod>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <ShowFeedbackControl>False</ShowFeedbackControl>
+    <BinaryTOC>True</BinaryTOC>
+    <IncludeFavorites>True</IncludeFavorites>
+    <CollectionTocStyle>Hierarchical</CollectionTocStyle>
+    <IncludeStopWordList>True</IncludeStopWordList>
+    <PlugInNamespaces>ms.vsipcc+, ms.vsexpresscc+</PlugInNamespaces>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <ContentPlacement>BelowNamespaces</ContentPlacement>
+</project>

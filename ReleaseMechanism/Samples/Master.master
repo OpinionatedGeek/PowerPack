@@ -1,0 +1,101 @@
+<%@ Master Language="C#" %>
+<%@ Register TagPrefix="opgeek" Namespace="OpinionatedGeek.Web.PowerPack" Assembly="OpinionatedGeek.Web.PowerPack"%>
+<html>
+<head>
+	<style>
+		A:hover
+		{
+			color: #CC0000;
+		}
+		.branded
+		{
+			color: white;
+			background-color: #FF831F;
+		}
+		A.branded:hover
+		{
+			color: #FFFFCC;
+		}
+	</style>
+	<title>OpinionatedGeek.com ::
+		<asp:contentplaceholder id="titlePlaceHolder" runat="server">ASP.NET PowerPack Control Example</asp:contentplaceholder>
+	</title>
+</head>
+<body style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: smaller; background-color: White; margin: 0px 0px 0px 0px;">
+    <div style="background-image: url(http://www.opinionatedgeek.com/Images/Top.gif); background-color: #FF831F; height: 73px;">
+        <a href="http://www.opinionatedgeek.com/" title="OpinionatedGeek Ltd. :: Part of the solution"><img style="padding:  0px 0px 0px 6px; margin: 10px 0px 0px 6px; vertical-align: bottom;" src="http://www.opinionatedgeek.com/Images/Logo.gif" width="156" height="59" border="0"/></a>
+    </div>
+
+    <div class="branded" style="width: 160px; float: left; padding: 10px 2px 50px 5px;">
+        <b><a class="branded" href="http://www.opinionatedgeek.com/">OpinionatedGeek</a></b>
+        <br />
+        <br />
+        <b><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/">PowerPack Home</a></b>
+        <br />
+        <br />
+        <b><a class="branded" href="http://www.opinionatedgeek.com/DotNET/Products/PowerPack/Buy/Default.aspx">Buy Now!</a></b>
+        <br />
+        <br />
+        <b>Online Demos:</b>
+        <ul class="branded" style="font-size: smaller;">
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/CollapsiblePanel.aspx">CollapsiblePanel</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ComboBox.aspx">ComboBox</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/DatePicker.aspx">DatePicker</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/EmailAddressValidator.aspx">EmailAddressValidator</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/HyperLink.aspx">HyperLink</a></li>
+            <li>
+                <b>MakeMeHomePage</b>
+                <ul class="branded">
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/MakeMeHomePageAutomatically.aspx">Automatically</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/MakeMeHomePageButton.aspx">Button</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/MakeMeHomePageImageButton.aspx">ImageButton</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/MakeMeHomePageLinkButton.aspx">LinkButton</a></li>
+                </ul>
+            </li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/NoRepostValidator.aspx">NoRepostValidator</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/Note.aspx">Note</a></li>
+            <li>
+                <b>Popup</b>
+                <ul class="branded">
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PopupAutomatically.aspx">Automatically</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PopupButton.aspx">Button</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PopupImageButton.aspx">ImageButton</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PopupLinkButton.aspx">LinkButton</a></li>
+                </ul>
+            </li>
+            <li>
+                <b>Print</b>
+                <ul class="branded">
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PrintAutomatically.aspx">Automatically</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PrintButton.aspx">Button</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PrintImageButton.aspx">ImageButton</a></li>
+                    <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/PrintLinkButton.aspx">LinkButton</a></li>
+                </ul>
+            </li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/RichTextBox.aspx">RichTextBox</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ScrollablePanel.aspx">ScrollablePanel</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ShowAtTime.aspx">ShowAtTime</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ShowIfInRole.aspx">ShowIfInRole</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ShowIfLoggedIn.aspx">ShowIfLoggedIn</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ShowIfNotLoggedIn.aspx">ShowIfNotLoggedIn</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ShowOnConditionClientSide.aspx">ShowOnCondition (Client)</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/ShowOnConditionServerSide.aspx">ShowOnCondition (Server)</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/SwearFilter.aspx">SwearFilter</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/TextBox.aspx">TextBox</a></li>
+            <li><a class="branded" href="http://www.opinionatedgeek.com/DotNet/Products/PowerPack/Examples/TwinListBox.aspx">TwinListBox</a></li>
+        </ul>
+    </div>
+    <div style="margin: 0px 0px 0px 190px;">
+		<form runat="server" ID="form">
+		    <asp:contentplaceholder id="bodyPlaceHolder" runat="server"></asp:contentplaceholder>
+        </form>
+    </div>
+
+    <br style="clear: both;" />
+    <div class="branded">
+	    &nbsp;&nbsp;&copy; Copyright 2003 - 2007 OpinionatedGeek Ltd. All rights reserved.<br/>
+	    &nbsp;&nbsp;Please 
+        <a class="branded" href="http://www.opinionatedgeek.com/Contact/">contact us</a> with any queries.
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Source", "Source\Source.csproj", "{359C457A-B1DE-42A3-B0F4-FFF86A506708}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TestWebSite", "TestWebSite\", "{49A2D4A5-A2B6-41F9-B593-676B81C071E6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		ProjectReferences = "{359C457A-B1DE-42A3-B0F4-FFF86A506708}|OpinionatedGeek.Web.PowerPack.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TestWebSite"
+		Debug.AspNetCompiler.PhysicalPath = "TestWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TestWebSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TestWebSite"
+		Release.AspNetCompiler.PhysicalPath = "TestWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TestWebSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49694"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Release Mechanism", "Release Mechanism", "{D56995C8-3C09-438C-B9F6-736CA8CE89A6}"
+	ProjectSection(SolutionItems) = preProject
+		ReleaseMechanism\BuildRelease.cmd = ReleaseMechanism\BuildRelease.cmd
+		ReleaseMechanism\license.txt = ReleaseMechanism\license.txt
+		ReleaseMechanism\PowerPack.shfb = ReleaseMechanism\PowerPack.shfb
+		ReleaseMechanism\Readme.html = ReleaseMechanism\Readme.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DA1705E3-A039-4296-A0DD-AD6C42AFB7CC}"
+	ProjectSection(SolutionItems) = preProject
+		ReleaseMechanism\Samples\CollapsiblePanel.aspx = ReleaseMechanism\Samples\CollapsiblePanel.aspx
+		ReleaseMechanism\Samples\ComboBox.aspx = ReleaseMechanism\Samples\ComboBox.aspx
+		ReleaseMechanism\Samples\DatePicker.aspx = ReleaseMechanism\Samples\DatePicker.aspx
+		ReleaseMechanism\Samples\default.aspx = ReleaseMechanism\Samples\default.aspx
+		ReleaseMechanism\Samples\EmailAddressValidator.aspx = ReleaseMechanism\Samples\EmailAddressValidator.aspx
+		ReleaseMechanism\Samples\HyperLink.aspx = ReleaseMechanism\Samples\HyperLink.aspx
+		ReleaseMechanism\Samples\MakeMeHomePageAutomatically.aspx = ReleaseMechanism\Samples\MakeMeHomePageAutomatically.aspx
+		ReleaseMechanism\Samples\MakeMeHomePageButton.aspx = ReleaseMechanism\Samples\MakeMeHomePageButton.aspx
+		ReleaseMechanism\Samples\MakeMeHomePageImageButton.aspx = ReleaseMechanism\Samples\MakeMeHomePageImageButton.aspx
+		ReleaseMechanism\Samples\MakeMeHomePageLinkButton.aspx = ReleaseMechanism\Samples\MakeMeHomePageLinkButton.aspx
+		ReleaseMechanism\Samples\Master.master = ReleaseMechanism\Samples\Master.master
+		ReleaseMechanism\Samples\NoRepostValidator.aspx = ReleaseMechanism\Samples\NoRepostValidator.aspx
+		ReleaseMechanism\Samples\Note.aspx = ReleaseMechanism\Samples\Note.aspx
+		ReleaseMechanism\Samples\PopupAutomatically.aspx = ReleaseMechanism\Samples\PopupAutomatically.aspx
+		ReleaseMechanism\Samples\PopupButton.aspx = ReleaseMechanism\Samples\PopupButton.aspx
+		ReleaseMechanism\Samples\PopupImageButton.aspx = ReleaseMechanism\Samples\PopupImageButton.aspx
+		ReleaseMechanism\Samples\PopupLinkButton.aspx = ReleaseMechanism\Samples\PopupLinkButton.aspx
+		ReleaseMechanism\Samples\PrintAutomatically.aspx = ReleaseMechanism\Samples\PrintAutomatically.aspx
+		ReleaseMechanism\Samples\PrintButton.aspx = ReleaseMechanism\Samples\PrintButton.aspx
+		ReleaseMechanism\Samples\PrintImageButton.aspx = ReleaseMechanism\Samples\PrintImageButton.aspx
+		ReleaseMechanism\Samples\PrintLinkButton.aspx = ReleaseMechanism\Samples\PrintLinkButton.aspx
+		ReleaseMechanism\Samples\RichTextBox.aspx = ReleaseMechanism\Samples\RichTextBox.aspx
+		ReleaseMechanism\Samples\ScrollablePanel.aspx = ReleaseMechanism\Samples\ScrollablePanel.aspx
+		ReleaseMechanism\Samples\ShowAtTime.aspx = ReleaseMechanism\Samples\ShowAtTime.aspx
+		ReleaseMechanism\Samples\ShowIfInRole.aspx = ReleaseMechanism\Samples\ShowIfInRole.aspx
+		ReleaseMechanism\Samples\ShowIfLoggedIn.aspx = ReleaseMechanism\Samples\ShowIfLoggedIn.aspx
+		ReleaseMechanism\Samples\ShowIfNotLoggedIn.aspx = ReleaseMechanism\Samples\ShowIfNotLoggedIn.aspx
+		ReleaseMechanism\Samples\ShowOnConditionClientSide.aspx = ReleaseMechanism\Samples\ShowOnConditionClientSide.aspx
+		ReleaseMechanism\Samples\ShowOnConditionServerSide.aspx = ReleaseMechanism\Samples\ShowOnConditionServerSide.aspx
+		ReleaseMechanism\Samples\SwearFilter.aspx = ReleaseMechanism\Samples\SwearFilter.aspx
+		ReleaseMechanism\Samples\SwearFilter.config = ReleaseMechanism\Samples\SwearFilter.config
+		ReleaseMechanism\Samples\TextBox.aspx = ReleaseMechanism\Samples\TextBox.aspx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Package For Release|Any CPU = Package For Release|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{359C457A-B1DE-42A3-B0F4-FFF86A506708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359C457A-B1DE-42A3-B0F4-FFF86A506708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359C457A-B1DE-42A3-B0F4-FFF86A506708}.Package For Release|Any CPU.ActiveCfg = Package For Release|Any CPU
+		{359C457A-B1DE-42A3-B0F4-FFF86A506708}.Package For Release|Any CPU.Build.0 = Package For Release|Any CPU
+		{359C457A-B1DE-42A3-B0F4-FFF86A506708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359C457A-B1DE-42A3-B0F4-FFF86A506708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A2D4A5-A2B6-41F9-B593-676B81C071E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A2D4A5-A2B6-41F9-B593-676B81C071E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A2D4A5-A2B6-41F9-B593-676B81C071E6}.Package For Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A2D4A5-A2B6-41F9-B593-676B81C071E6}.Package For Release|Any CPU.Build.0 = Debug|Any CPU
+		{49A2D4A5-A2B6-41F9-B593-676B81C071E6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A2D4A5-A2B6-41F9-B593-676B81C071E6}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA1705E3-A039-4296-A0DD-AD6C42AFB7CC} = {D56995C8-3C09-438C-B9F6-736CA8CE89A6}
+	EndGlobalSection
+EndGlobal

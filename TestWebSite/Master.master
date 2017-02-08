@@ -1,0 +1,13 @@
+<%@ Master Language="C#" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head runat="server">
+		<title>
+			Test Page Based On Master
+		</title>
+		<asp:contentplaceholder id="headerPlaceHolder" runat="server"></asp:contentplaceholder>
+	</head>
+	<body>
+		<asp:contentplaceholder id="bodyPlaceHolder" runat="server"></asp:contentplaceholder>
+	</body>
+</html>
