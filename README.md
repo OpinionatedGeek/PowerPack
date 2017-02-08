@@ -35,4 +35,5 @@ It's all a bit hazy, given the last check-in was over 8 years ago.
 ## Licensing
 
 Despite what appears in the (unedited) code files, this project is all released now (in 2017)
-into the public domain using the [LICENSE.txt](LICENSE.txt).
+into the public domain using the [LICENSE.txt](LICENSE.txt). The license block at the head of
+each source file no longer applies - I just wanted to keep the files as original as possible.
